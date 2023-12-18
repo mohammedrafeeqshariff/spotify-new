@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    box-sizing:border-box;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(31, 29, 29);
+    overflow: hidden;
+    
+}
+#container-1{
+    display: flex;
+}
+.leftside{
+    display:block;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size:larger;
+    border:1px solid rgb(0, 0, 0);
+    padding: 1px ;
+    min-width: 20%;  
+}
+
+#spotifylogo{
+    height:70px;
+    padding: 10px; 
+}
+
+#homelogo, #search, #library, #create, #liked, #yourepisodes, #install{
+    height:40px;
+    padding: 10px;   
+}
+.home{
+    background-color: rgb(73, 72, 72);
+    border-radius: 10px;
+}
+.choose{
+    padding:10px;
+}
+.logo{
+    display: flex;
+
+
+    align-items: center;
+}
+
+#container-2{
+    display:block;
+    color: white;
+    justify-content: space-between;
+
+}
+.icons{
+    display: flex;
+    width: 94.5%;
+    height: 30px;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-top: 20px;
+    /* border: 2px solid white; */
+}
+#user{
+    width: fit-content;
+}
+.right-side{
+    display: block;
+    padding-left: 20px;
+   
+}
+.gm{
+    font-size: xx-large;
+    padding: 30px;
+}
+#container-3{
+    display:flex; 
+    justify-content: space-between;  
+
+}
+
+.flexproperty{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    width: 1310px;
+    justify-content: space-between;
+}
+.heart, .kdrama, .kda, .likedsongs{
+    display: flex;
+    background-color: rgb(76, 72, 72);
+    align-items: center;
+    width:300px;
+    border-radius: 5px;
+}
+.dance{
+    display: flex;
+    padding-left:20px ;
+    width: 350px;
+    align-items: center;
+}
+#dance{
+    display: flex;
+    background-color: rgb(78, 74, 74);
+    width: 300px;
+    border-radius: 5px;
+    align-items: center;
+}
+#container-4{
+     display: flex;
+    justify-content: space-between;
+    width:1320px;
+    padding-left:10px ;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6 {
+    border: 10px solid rgb(34, 27, 27);
+    background-color: rgb(39, 36, 36);
+
+} 
+
+.text{
+    font-size: xx-large;
+    padding-left: 30px;
+    padding: 30px 20px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 15px;
+    left: 0px;
+    background-color: rgb(11, 11, 11); 
+
+}
+#footimage1{
+    height: 80px;
+    margin-left: 15px;
+
+}
+#music{
+    height: 100px;
+    width:880px;
+    background-color: rgb(12, 12, 12);
+    margin-left: 70px;
+}
+.words{
+    margin-left: 10px;
+    font-weight: 500;
+}
+#green{
+    height:30px;
+    margin-left: 60px;
+}
+#options{
+    height:30px;
+    margin-left: 115px;
+}
+
+@media (width <= 320px){
+    #container-1{
+        font-size:10px;
+        display: flex;
+        flex-direction: row;
+    }
+    #spotifylogo{
+        width: 90px;
+        height: 50px;
+        display: none;
+    }
+    .logo{
+        display: block;
+        justify-content: space-between;
+        margin-top:3px;
+        margin-left: 9px;
+    }
+    .home{
+        width:40px;
+        height: 70px;
+        padding-left:2px;
+    }
+    .choose{
+        display: none;
+    }
+    .flexproperty{
+        display: block;
+    }
+    .heart, .kdrama, .kda, .likedsongs{
+        margin-top: 10px;
+        
+    }
+    .icons{
+        width:190px;
+        margin-top: 10px;
+        margin-left: 55px;
+        
+    }
+    .gm{
+        font-size: large;
+        margin-left: 0px;
+        padding:10px;
+    }
+    .kdrama, .kda, .likedsongs{
+        display: none;
+    }
+    .img2,.img3,.img4,.img5,.img6{
+        display: none;
+    }
+    .img1{
+        height: 215px;
+        margin-left: 20px;
+   }
+    .text{
+        font-size: large;
+        margin-top: 9px;
+        padding: 5px;
+        margin-left:25px ;
+
+    }
+    .leftside{
+        width:40px;
+    }
+    .heart{
+        margin-top: 0px;
+        width:235px;
+        font-size: small;
+        height:75px
+    }
+    #heart{
+        height:75px
+    }
+    #dancer{
+        height: 75px;
+        width: 75px
+    }
+    #dance{
+        width:235px;
+
+    }
+    .dance{
+        margin-left: 0px;
+        font-size: small;
+        
+    }
+
+    .footer{
+        margin-top: 0px;
+        width:100vw;
+        display: block;
+        padding: 0px;
+        
+    }
+    .foot{
+        display: flex;
+    }
+    #footimage1{
+        padding: 2px;
+        height: 40px;
+        margin-left:0px ;
+    
+    }
+    #footword{
+        display: none;
+    }
+    #green{
+        margin: 0px;
+        border: 2px solid;
+        display: none;
+    }
+    #music{
+        height: 50px;
+        width: 100vw;
+        margin-left: 0px;
+        margin-top: 0px;
+    
+
+    }
+    #options{
+        margin:0px;
+        width: 100vw;
+    }
+
+    
+}
